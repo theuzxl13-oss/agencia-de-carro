@@ -13,6 +13,14 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const vehicles = JSON.parse(readFileSync(join(root, "data/demo-vehicles.json"), "utf8"));
+// Fotos reais de licença livre (Wikimedia Commons), quando disponíveis; senão usa as ilustrações.
+const photoCredits = (() => {
+  try {
+    return JSON.parse(readFileSync(join(root, "data/demo-photo-credits.json"), "utf8"));
+  } catch {
+    return {};
+  }
+})();
 const outDir = join(root, "public/demo");
 mkdirSync(outDir, { recursive: true });
 
@@ -176,7 +184,7 @@ for (const v of vehicles) {
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ${Array.from({ length: IMAGES_PER_VEHICLE }, (_, i) => `('/demo/${v.slug}-${i + 1}.svg', ${i})`).join(", ")}) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ${(photoCredits[v.slug]?.map((c) => c.file) ?? Array.from({ length: IMAGES_PER_VEHICLE }, (_, i) => `/demo/${v.slug}-${i + 1}.svg`)).map((url, i) => `('${url}', ${i})`).join(", ")}) as img(url, pos);
 
 `;
 }

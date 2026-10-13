@@ -24,7 +24,7 @@ import { absoluteUrl, cn, formatKm, formatPrice, vehicleFullName, vehicleYears }
 import { vehicleInterestMessage, whatsappLink } from "@/lib/whatsapp";
 import { getSimilarVehicles, getVehicleBySlug } from "@/services/vehicles";
 import { getStoreSettings } from "@/services/settings";
-import { DEMO_VEHICLES } from "@/lib/demo-data";
+import { DEMO_PHOTO_CREDITS, DEMO_VEHICLES } from "@/lib/demo-data";
 import { IS_STATIC_EXPORT } from "@/lib/paths";
 import type { Vehicle } from "@/types";
 
@@ -146,6 +146,21 @@ export default async function VehiclePage({ params }: Props) {
                 </div>
               )}
             </Gallery>
+
+            {v.is_demo && DEMO_PHOTO_CREDITS[v.slug] && (
+              <p className="-mt-5 text-[11px] leading-relaxed text-ink-400">
+                Fotos ilustrativas de licença livre via Wikimedia Commons:{" "}
+                {DEMO_PHOTO_CREDITS[v.slug].map((c, i) => (
+                  <span key={c.file}>
+                    {i > 0 && " · "}
+                    <a href={c.source} target="_blank" rel="noopener noreferrer" className="underline hover:text-ink-700">
+                      {c.author}
+                    </a>{" "}
+                    ({c.license})
+                  </span>
+                ))}
+              </p>
+            )}
 
             {/* Título (mobile) */}
             <div className="lg:hidden">

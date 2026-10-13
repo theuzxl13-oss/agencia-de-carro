@@ -8,30 +8,30 @@
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
-  values ('toyota-corolla-xei-2024', 'Toyota', 'Corolla', 'XEi 2.0 Flex Automático', 2023, 2024, 129900, null, 32000, 'Flex', 'Automático', 'Sedan', 'Prata', 4, '7', 'VEÍCULO DE DEMONSTRAÇÃO. Sedan médio com câmbio automático CVT, motor 2.0 flex e pacote completo de conforto e segurança. Texto fictício para testes — substitua pelos dados reais no painel administrativo.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Sensor de estacionamento', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático', 'Chave presencial']::text[], 'disponivel', true, false, false, true, true)
+  values ('toyota-corolla-xei-2024', 'Toyota', 'Corolla', 'XEi 2.0 Flex Automático', 2023, 2024, 129900, null, 32000, 'Flex', 'Automático', 'Sedan', 'Branco', 4, '7', 'VEÍCULO DE DEMONSTRAÇÃO. Sedan médio com câmbio automático CVT, motor 2.0 flex e pacote completo de conforto e segurança. Texto fictício para testes — substitua pelos dados reais no painel administrativo.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Sensor de estacionamento', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático', 'Chave presencial']::text[], 'disponivel', true, false, false, true, true)
   on conflict (slug) do nothing
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/toyota-corolla-xei-2024-1.svg', 0), ('/demo/toyota-corolla-xei-2024-2.svg', 1), ('/demo/toyota-corolla-xei-2024-3.svg', 2), ('/demo/toyota-corolla-xei-2024-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/toyota-corolla-xei-2024-1.jpg', 0), ('/demo/fotos/toyota-corolla-xei-2024-2.jpg', 1), ('/demo/fotos/toyota-corolla-xei-2024-3.jpg', 2)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
-  values ('honda-civic-exl-2021', 'Honda', 'Civic', 'EXL 2.0 CVT', 2021, 2021, 119900, 124900, 48500, 'Flex', 'Automático', 'Sedan', 'Preto', 4, '2', 'VEÍCULO DE DEMONSTRAÇÃO. Sedan com acabamento em couro, câmbio CVT e central multimídia com espelhamento. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático']::text[], 'disponivel', true, true, false, true, true)
+  values ('honda-civic-exl-2021', 'Honda', 'Civic', 'EXL 2.0 CVT', 2021, 2021, 119900, 124900, 48500, 'Flex', 'Automático', 'Sedan', 'Prata', 4, '2', 'VEÍCULO DE DEMONSTRAÇÃO. Sedan com acabamento em couro, câmbio CVT e central multimídia com espelhamento. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático']::text[], 'disponivel', true, true, false, true, true)
   on conflict (slug) do nothing
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/honda-civic-exl-2021-1.svg', 0), ('/demo/honda-civic-exl-2021-2.svg', 1), ('/demo/honda-civic-exl-2021-3.svg', 2), ('/demo/honda-civic-exl-2021-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/honda-civic-exl-2021-1.jpg', 0), ('/demo/fotos/honda-civic-exl-2021-2.jpg', 1), ('/demo/fotos/honda-civic-exl-2021-3.jpg', 2)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
-  values ('chevrolet-onix-lt-2023', 'Chevrolet', 'Onix', 'LT 1.0 Turbo', 2022, 2023, 79900, null, 28000, 'Flex', 'Manual', 'Hatch', 'Branco', 4, '5', 'VEÍCULO DE DEMONSTRAÇÃO. Hatch compacto econômico com motor turbo e multimídia. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Controle de estabilidade', 'Airbags', 'ABS']::text[], 'disponivel', true, false, true, true, true)
+  values ('chevrolet-onix-lt-2023', 'Chevrolet', 'Onix', 'LT 1.0 Turbo', 2022, 2023, 79900, null, 28000, 'Flex', 'Manual', 'Hatch', 'Vermelho', 4, '5', 'VEÍCULO DE DEMONSTRAÇÃO. Hatch compacto econômico com motor turbo e multimídia. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Controle de estabilidade', 'Airbags', 'ABS']::text[], 'disponivel', true, false, true, true, true)
   on conflict (slug) do nothing
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/chevrolet-onix-lt-2023-1.svg', 0), ('/demo/chevrolet-onix-lt-2023-2.svg', 1), ('/demo/chevrolet-onix-lt-2023-3.svg', 2), ('/demo/chevrolet-onix-lt-2023-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/chevrolet-onix-lt-2023-1.jpg', 0), ('/demo/fotos/chevrolet-onix-lt-2023-2.jpg', 1)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
@@ -40,25 +40,25 @@ with v as (
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/volkswagen-t-cross-highline-2022-1.svg', 0), ('/demo/volkswagen-t-cross-highline-2022-2.svg', 1), ('/demo/volkswagen-t-cross-highline-2022-3.svg', 2), ('/demo/volkswagen-t-cross-highline-2022-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/volkswagen-t-cross-highline-2022-1.jpg', 0), ('/demo/fotos/volkswagen-t-cross-highline-2022-2.jpg', 1), ('/demo/fotos/volkswagen-t-cross-highline-2022-3.jpg', 2)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
-  values ('jeep-compass-longitude-2023', 'Jeep', 'Compass', 'Longitude 1.3 T270', 2023, 2023, 159900, 165900, 25000, 'Flex', 'Automático', 'SUV', 'Azul', 4, '1', 'VEÍCULO DE DEMONSTRAÇÃO. SUV médio com motor turbo, bancos em couro e pacote completo de segurança. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Sensor de estacionamento', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático', 'Chave presencial']::text[], 'disponivel', true, true, false, true, true)
+  values ('jeep-compass-longitude-2023', 'Jeep', 'Compass', 'Longitude 1.3 T270', 2023, 2023, 159900, 165900, 25000, 'Flex', 'Automático', 'SUV', 'Prata', 4, '1', 'VEÍCULO DE DEMONSTRAÇÃO. SUV médio com motor turbo, bancos em couro e pacote completo de segurança. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Sensor de estacionamento', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático', 'Chave presencial']::text[], 'disponivel', true, true, false, true, true)
   on conflict (slug) do nothing
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/jeep-compass-longitude-2023-1.svg', 0), ('/demo/jeep-compass-longitude-2023-2.svg', 1), ('/demo/jeep-compass-longitude-2023-3.svg', 2), ('/demo/jeep-compass-longitude-2023-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/jeep-compass-longitude-2023-1.jpg', 0), ('/demo/fotos/jeep-compass-longitude-2023-2.jpg', 1), ('/demo/fotos/jeep-compass-longitude-2023-3.jpg', 2)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
-  values ('fiat-toro-volcano-2022', 'Fiat', 'Toro', 'Volcano 2.0 Diesel 4x4', 2021, 2022, 149900, null, 61000, 'Diesel', 'Automático', 'Picape', 'Vermelho', 4, '4', 'VEÍCULO DE DEMONSTRAÇÃO. Picape média com tração 4x4, motor diesel e câmbio automático. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático']::text[], 'disponivel', false, false, false, true, true)
+  values ('fiat-toro-volcano-2022', 'Fiat', 'Toro', 'Volcano 2.0 Diesel 4x4', 2021, 2022, 149900, null, 61000, 'Diesel', 'Automático', 'Picape', 'Branco', 4, '4', 'VEÍCULO DE DEMONSTRAÇÃO. Picape média com tração 4x4, motor diesel e câmbio automático. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático']::text[], 'disponivel', false, false, false, true, true)
   on conflict (slug) do nothing
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/fiat-toro-volcano-2022-1.svg', 0), ('/demo/fiat-toro-volcano-2022-2.svg', 1), ('/demo/fiat-toro-volcano-2022-3.svg', 2), ('/demo/fiat-toro-volcano-2022-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/fiat-toro-volcano-2022-1.jpg', 0), ('/demo/fotos/fiat-toro-volcano-2022-2.jpg', 1), ('/demo/fotos/fiat-toro-volcano-2022-3.jpg', 2)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
@@ -67,7 +67,7 @@ with v as (
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/hyundai-hb20-comfort-2020-1.svg', 0), ('/demo/hyundai-hb20-comfort-2020-2.svg', 1), ('/demo/hyundai-hb20-comfort-2020-3.svg', 2), ('/demo/hyundai-hb20-comfort-2020-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/hyundai-hb20-comfort-2020-1.jpg', 0), ('/demo/fotos/hyundai-hb20-comfort-2020-2.jpg', 1)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
@@ -76,23 +76,23 @@ with v as (
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/renault-kangoo-express-2020-1.svg', 0), ('/demo/renault-kangoo-express-2020-2.svg', 1), ('/demo/renault-kangoo-express-2020-3.svg', 2), ('/demo/renault-kangoo-express-2020-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/renault-kangoo-express-2020-1.jpg', 0), ('/demo/fotos/renault-kangoo-express-2020-2.jpg', 1), ('/demo/fotos/renault-kangoo-express-2020-3.jpg', 2)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
-  values ('mini-cooper-s-cabrio-2019', 'Mini', 'Cooper', 'S Cabrio 2.0 Turbo', 2019, 2019, 189900, null, 35000, 'Gasolina', 'Automático', 'Conversível', 'Verde', 2, '6', 'VEÍCULO DE DEMONSTRAÇÃO. Conversível esportivo com capota elétrica e motor turbo. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Apple CarPlay', 'Sensor de estacionamento', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático', 'Chave presencial']::text[], 'disponivel', true, false, true, true, true)
+  values ('mini-cooper-s-cabrio-2019', 'Mini', 'Cooper', 'S Cabrio 2.0 Turbo', 2019, 2019, 189900, null, 35000, 'Gasolina', 'Automático', 'Conversível', 'Branco', 2, '6', 'VEÍCULO DE DEMONSTRAÇÃO. Conversível esportivo com capota elétrica e motor turbo. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Apple CarPlay', 'Sensor de estacionamento', 'Bancos de couro', 'Controle de estabilidade', 'Controle de tração', 'Airbags', 'ABS', 'Piloto automático', 'Chave presencial']::text[], 'disponivel', true, false, true, true, true)
   on conflict (slug) do nothing
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/mini-cooper-s-cabrio-2019-1.svg', 0), ('/demo/mini-cooper-s-cabrio-2019-2.svg', 1), ('/demo/mini-cooper-s-cabrio-2019-3.svg', 2), ('/demo/mini-cooper-s-cabrio-2019-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/mini-cooper-s-cabrio-2019-1.jpg', 0), ('/demo/fotos/mini-cooper-s-cabrio-2019-2.jpg', 1), ('/demo/fotos/mini-cooper-s-cabrio-2019-3.jpg', 2)) as img(url, pos);
 
 with v as (
   insert into public.vehicles (slug, brand, model, version, year_manufacture, year_model, price, previous_price, mileage, fuel, transmission, body_type, color, doors, plate_end, description, options, status, featured, is_offer, is_new_arrival, published, is_demo)
-  values ('chevrolet-spin-premier-2023', 'Chevrolet', 'Spin', 'Premier 1.8 7 lugares', 2022, 2023, 104900, null, 30000, 'Flex', 'Automático', 'Minivan', 'Prata', 4, '0', 'VEÍCULO DE DEMONSTRAÇÃO. Minivan de 7 lugares, ideal para famílias. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Sensor de estacionamento', 'Controle de estabilidade', 'Airbags', 'ABS']::text[], 'disponivel', false, false, true, true, true)
+  values ('chevrolet-spin-premier-2023', 'Chevrolet', 'Spin', 'Premier 1.8 7 lugares', 2022, 2023, 104900, null, 30000, 'Flex', 'Automático', 'Minivan', 'Branco', 4, '0', 'VEÍCULO DE DEMONSTRAÇÃO. Minivan de 7 lugares, ideal para famílias. Texto fictício para testes.', array['Ar-condicionado', 'Direção elétrica', 'Vidros elétricos', 'Travas elétricas', 'Central multimídia', 'Bluetooth', 'Android Auto', 'Apple CarPlay', 'Câmera de ré', 'Sensor de estacionamento', 'Controle de estabilidade', 'Airbags', 'ABS']::text[], 'disponivel', false, false, true, true, true)
   on conflict (slug) do nothing
   returning id
 )
 insert into public.vehicle_images (vehicle_id, url, position)
-select v.id, img.url, img.pos from v, (values ('/demo/chevrolet-spin-premier-2023-1.svg', 0), ('/demo/chevrolet-spin-premier-2023-2.svg', 1), ('/demo/chevrolet-spin-premier-2023-3.svg', 2), ('/demo/chevrolet-spin-premier-2023-4.svg', 3)) as img(url, pos);
+select v.id, img.url, img.pos from v, (values ('/demo/fotos/chevrolet-spin-premier-2023-1.jpg', 0), ('/demo/fotos/chevrolet-spin-premier-2023-2.jpg', 1), ('/demo/fotos/chevrolet-spin-premier-2023-3.jpg', 2)) as img(url, pos);
 

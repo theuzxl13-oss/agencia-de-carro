@@ -12,7 +12,7 @@
     "fuel": "Flex",
     "transmission": "Automático",
     "body_type": "Sedan",
-    "color": "Prata",
+    "color": "Branco",
     "color_hex": "#b8bec7",
     "doors": 4,
     "plate_end": "7",
@@ -20,7 +20,24 @@
     "featured": true,
     "is_offer": false,
     "is_new_arrival": false,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Android Auto", "Apple CarPlay", "Câmera de ré", "Sensor de estacionamento", "Controle de estabilidade", "Controle de tração", "Airbags", "ABS", "Piloto automático", "Chave presencial"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Android Auto",
+      "Apple CarPlay",
+      "Câmera de ré",
+      "Sensor de estacionamento",
+      "Controle de estabilidade",
+      "Controle de tração",
+      "Airbags",
+      "ABS",
+      "Piloto automático",
+      "Chave presencial"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. Sedan médio com câmbio automático CVT, motor 2.0 flex e pacote completo de conforto e segurança. Texto fictício para testes — substitua pelos dados reais no painel administrativo."
   },
   {
@@ -36,7 +53,7 @@
     "fuel": "Flex",
     "transmission": "Automático",
     "body_type": "Sedan",
-    "color": "Preto",
+    "color": "Prata",
     "color_hex": "#23262d",
     "doors": 4,
     "plate_end": "2",
@@ -44,7 +61,23 @@
     "featured": true,
     "is_offer": true,
     "is_new_arrival": false,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Android Auto", "Apple CarPlay", "Câmera de ré", "Bancos de couro", "Controle de estabilidade", "Controle de tração", "Airbags", "ABS", "Piloto automático"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Android Auto",
+      "Apple CarPlay",
+      "Câmera de ré",
+      "Bancos de couro",
+      "Controle de estabilidade",
+      "Controle de tração",
+      "Airbags",
+      "ABS",
+      "Piloto automático"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. Sedan com acabamento em couro, câmbio CVT e central multimídia com espelhamento. Texto fictício para testes."
   },
   {
@@ -60,7 +93,7 @@
     "fuel": "Flex",
     "transmission": "Manual",
     "body_type": "Hatch",
-    "color": "Branco",
+    "color": "Vermelho",
     "color_hex": "#f1f2f4",
     "doors": 4,
     "plate_end": "5",
@@ -68,7 +101,19 @@
     "featured": true,
     "is_offer": false,
     "is_new_arrival": true,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Android Auto", "Apple CarPlay", "Controle de estabilidade", "Airbags", "ABS"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Android Auto",
+      "Apple CarPlay",
+      "Controle de estabilidade",
+      "Airbags",
+      "ABS"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. Hatch compacto econômico com motor turbo e multimídia. Texto fictício para testes."
   },
   {
@@ -92,7 +137,24 @@
     "featured": true,
     "is_offer": false,
     "is_new_arrival": false,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Android Auto", "Apple CarPlay", "Câmera de ré", "Sensor de estacionamento", "Controle de estabilidade", "Controle de tração", "Airbags", "ABS", "Piloto automático", "Chave presencial"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Android Auto",
+      "Apple CarPlay",
+      "Câmera de ré",
+      "Sensor de estacionamento",
+      "Controle de estabilidade",
+      "Controle de tração",
+      "Airbags",
+      "ABS",
+      "Piloto automático",
+      "Chave presencial"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. SUV compacto com motor turbo, painel digital e assistentes de condução. Texto fictício para testes."
   },
   {
@@ -108,7 +170,7 @@
     "fuel": "Flex",
     "transmission": "Automático",
     "body_type": "SUV",
-    "color": "Azul",
+    "color": "Prata",
     "color_hex": "#1f4e8c",
     "doors": 4,
     "plate_end": "1",
@@ -116,7 +178,25 @@
     "featured": true,
     "is_offer": true,
     "is_new_arrival": false,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Android Auto", "Apple CarPlay", "Câmera de ré", "Sensor de estacionamento", "Bancos de couro", "Controle de estabilidade", "Controle de tração", "Airbags", "ABS", "Piloto automático", "Chave presencial"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Android Auto",
+      "Apple CarPlay",
+      "Câmera de ré",
+      "Sensor de estacionamento",
+      "Bancos de couro",
+      "Controle de estabilidade",
+      "Controle de tração",
+      "Airbags",
+      "ABS",
+      "Piloto automático",
+      "Chave presencial"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. SUV médio com motor turbo, bancos em couro e pacote completo de segurança. Texto fictício para testes."
   },
   {
@@ -132,7 +212,7 @@
     "fuel": "Diesel",
     "transmission": "Automático",
     "body_type": "Picape",
-    "color": "Vermelho",
+    "color": "Branco",
     "color_hex": "#b3202a",
     "doors": 4,
     "plate_end": "4",
@@ -140,7 +220,23 @@
     "featured": false,
     "is_offer": false,
     "is_new_arrival": false,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Android Auto", "Apple CarPlay", "Câmera de ré", "Bancos de couro", "Controle de estabilidade", "Controle de tração", "Airbags", "ABS", "Piloto automático"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Android Auto",
+      "Apple CarPlay",
+      "Câmera de ré",
+      "Bancos de couro",
+      "Controle de estabilidade",
+      "Controle de tração",
+      "Airbags",
+      "ABS",
+      "Piloto automático"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. Picape média com tração 4x4, motor diesel e câmbio automático. Texto fictício para testes."
   },
   {
@@ -164,7 +260,15 @@
     "featured": false,
     "is_offer": false,
     "is_new_arrival": false,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Bluetooth", "Airbags", "ABS"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Bluetooth",
+      "Airbags",
+      "ABS"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO (exemplo de anúncio VENDIDO). Hatch econômico ideal para o dia a dia. Texto fictício para testes."
   },
   {
@@ -188,7 +292,12 @@
     "featured": false,
     "is_offer": false,
     "is_new_arrival": false,
-    "options": ["Direção elétrica", "Travas elétricas", "Airbags", "ABS"],
+    "options": [
+      "Direção elétrica",
+      "Travas elétricas",
+      "Airbags",
+      "ABS"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO (exemplo de anúncio RESERVADO). Utilitário com amplo espaço de carga. Texto fictício para testes."
   },
   {
@@ -204,7 +313,7 @@
     "fuel": "Gasolina",
     "transmission": "Automático",
     "body_type": "Conversível",
-    "color": "Verde",
+    "color": "Branco",
     "color_hex": "#1e5a43",
     "doors": 2,
     "plate_end": "6",
@@ -212,7 +321,23 @@
     "featured": true,
     "is_offer": false,
     "is_new_arrival": true,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Apple CarPlay", "Sensor de estacionamento", "Bancos de couro", "Controle de estabilidade", "Controle de tração", "Airbags", "ABS", "Piloto automático", "Chave presencial"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Apple CarPlay",
+      "Sensor de estacionamento",
+      "Bancos de couro",
+      "Controle de estabilidade",
+      "Controle de tração",
+      "Airbags",
+      "ABS",
+      "Piloto automático",
+      "Chave presencial"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. Conversível esportivo com capota elétrica e motor turbo. Texto fictício para testes."
   },
   {
@@ -228,7 +353,7 @@
     "fuel": "Flex",
     "transmission": "Automático",
     "body_type": "Minivan",
-    "color": "Prata",
+    "color": "Branco",
     "color_hex": "#c3c8cf",
     "doors": 4,
     "plate_end": "0",
@@ -236,7 +361,21 @@
     "featured": false,
     "is_offer": false,
     "is_new_arrival": true,
-    "options": ["Ar-condicionado", "Direção elétrica", "Vidros elétricos", "Travas elétricas", "Central multimídia", "Bluetooth", "Android Auto", "Apple CarPlay", "Câmera de ré", "Sensor de estacionamento", "Controle de estabilidade", "Airbags", "ABS"],
+    "options": [
+      "Ar-condicionado",
+      "Direção elétrica",
+      "Vidros elétricos",
+      "Travas elétricas",
+      "Central multimídia",
+      "Bluetooth",
+      "Android Auto",
+      "Apple CarPlay",
+      "Câmera de ré",
+      "Sensor de estacionamento",
+      "Controle de estabilidade",
+      "Airbags",
+      "ABS"
+    ],
     "description": "VEÍCULO DE DEMONSTRAÇÃO. Minivan de 7 lugares, ideal para famílias. Texto fictício para testes."
   }
 ]

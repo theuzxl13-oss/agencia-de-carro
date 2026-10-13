@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, BadgePercent, Calculator, Car, MessageCircle, Search, ShieldCheck, Sparkles, Warehouse } from "lucide-react";
 import { QuickSearch } from "@/components/site/QuickSearch";
+import { HeroVideo } from "@/components/site/HeroVideo";
 import { LocationSection } from "@/components/site/LocationSection";
 import { CarSwoosh } from "@/components/brand/Logo";
 import { VehicleCard } from "@/components/vehicle/VehicleCard";
@@ -49,10 +50,8 @@ export default async function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* HERO */}
-      <section className="speed-lines relative overflow-hidden overflow-x-clip bg-ink-950 pb-10 pt-12 text-white sm:pt-16 lg:pb-16 lg:pt-20">
-        <div className="pointer-events-none absolute -right-40 top-6 w-[900px] max-w-none opacity-[0.13] sm:-right-24 lg:right-[-60px] lg:top-0 lg:opacity-25">
-          <CarSwoosh />
-        </div>
+      <section className="relative overflow-hidden overflow-x-clip bg-ink-950 pb-10 pt-16 text-white sm:pt-24 lg:min-h-[86vh] lg:pb-16 lg:pt-32">
+        <HeroVideo />
         <div className="container relative">
           <div className="max-w-5xl animate-fade-up">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-ink-300">
